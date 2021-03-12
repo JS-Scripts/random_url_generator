@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script type="text/javascript">
-<!--
-function bekle(){
-    window.location = "http://www.google.com.tr"
-}
-//-->
-</script>
-</head>
-<body onLoad="setTimeout('bekle()', 3000)">
-<h2>Yönlendiriliyorsunuz!</h2>
-<p>3 saniye içerisinde yeni sayfamıza yönlendirileceksiniz!</p>
-
-</body>
+    <head>
+        <script type="text/javascript">
+            function OnLaunch()
+            {
+                var BaseURL = "https://ffreality.github.io/checker/";
+                var RandomINT = Math.floor(Math.random() * Math.floor(999999));
+                window.location = "https:// + BaseURL + / + RandomINT"
+            }
+        </script>
+    </head>
+    
+    <body onLoad="OnLaunch">
+    </body>
 </html>
