@@ -4,12 +4,12 @@
 
 <script>
 var links = [
-              "https://ffreality.github.io/checker/"]
+              "https://ffreality.github.io/checker/"];
 
             function OnLaunch() {
               var randIdx = Math.random() * links.length;
               randIdx = parseInt(randIdx, 10);
-              var link = 'http://' + links + [randIdx];
+              var link = 'http://' + links[randIdx];
               return link;
               };
 
